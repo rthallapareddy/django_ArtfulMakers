@@ -78,9 +78,9 @@ WSGI_APPLICATION = 'ArtfulMakersCo.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'mydatabase',
-        'USER': 'mydatabaseuser',
-        'PASSWORD': 'mypassword',
+        'NAME': 'projectdb',
+        'USER': 'superuser',
+        'PASSWORD': 'superuser',
         'HOST': 'myrdshost.rds.amazonaws.com',
         'PORT': '5432',
     }
