@@ -81,7 +81,7 @@ DATABASES = {
         'NAME': 'projectdb',
         'USER': 'superuser',
         'PASSWORD': 'superuser',
-        'HOST': 'myrdshost.rds.amazonaws.com',
+        'HOST': 'projectdb.cfwoa40a262j.us-east-1.rds.amazonaws.com',
         'PORT': '5432',
     }
 }
