@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-3ll)-yv^olza1$fzahyyun583kx!x-v&pem1nlc(i2y#$6d7!k
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'ArtfulMakersCo.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'mydatabase',
+        'USER': 'mydatabaseuser',
+        'PASSWORD': 'mypassword',
+        'HOST': 'myrdshost.rds.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
